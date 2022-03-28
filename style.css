@@ -24,7 +24,7 @@ body {
   align-items: center;
   padding: 15px 0;
   font-size: 22px;
-  width: 907px;
+  width: 935px;
   margin: auto;
 }
 .container > div {
@@ -43,9 +43,10 @@ body {
 
 .main {
   margin: auto;
-  width: 907px;
+  width: 935px;
   height: 100%;
   display: flex;
+  justify-content: space-between;
   padding-top: 90px;
 }
 
@@ -90,6 +91,7 @@ body {
 }
 .stories div {
   margin-right: 13.5px;
+  margin-top: 4px;
 }
 .stories p {
   font: 400 12px 'Roboto', sans-serif;
@@ -127,7 +129,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80px;
+  gap: 15px;
 }
 .header-post h2 {
   font: 500 14px 'Roboto', sans-serif;
@@ -141,10 +143,14 @@ body {
 .img-post img {
   width: 100%;
 }
+.video-post video {
+  width: 100%;
+}
 .icons-post {
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .icons-post ion-icon {
   margin-right: 14px;
@@ -155,9 +161,9 @@ body {
   font-size: 22px;
 }
 .likes-post {
-  padding: 10px 15px;
+  padding: 10px 15px 0 15px;
   display: flex;
-  justify-content: ;
+
   align-items: center;
 }
 .likes-post img {
@@ -172,11 +178,58 @@ body {
 .likes-post span {
   font: 500 14px 'Roboto', sans-serif;
 }
+.coments {
+  padding: 0 15px 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+}
+.coments p {
+  font: 300 14px 'Roboto', sans-serif;
+}
+.coments strong {
+  font-weight: bold;
+}
+.add-coments {
+  padding: 10px 15px;
+  display: flex;
+  border-top: 1px solid #dbdbdb;
+  align-items: center;
+  font-size: 22px;
+  width: 100%;
+}
+
+.add-coments div:first-child {
+  margin-right: 10px;
+}
+.add-coments div:nth-child(2) {
+  width: 85%;
+}
+.add-coments input {
+  width: 80%;
+  padding: 5px 0;
+  border: none;
+}
+.add-coments input:focus {
+  outline: none;
+}
+.add-coments button {
+  background-color: #b2dffc;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 3px;
+  color: white;
+  transition: background 0.3s;
+}
+.add-coments button:hover {
+  background-color: #0095f6;
+}
 .bottom-bar {
   display: none;
 }
 .sidebar {
-  padding: 18px 0 18px 29px;
+  padding: 25px 0;
   background-color: #fff;
   z-index: 0;
   display: flex;
@@ -283,6 +336,9 @@ body {
     flex-direction: column;
     width: 595px;
     margin: auto;
+  }
+  .add-coments input {
+    width: 480px;
   }
 }
 @media (max-width: 614px) {
